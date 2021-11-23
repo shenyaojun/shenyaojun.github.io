@@ -1,15 +1,12 @@
----
-layout: page
-description: "中西融合，即学即会，让世界沟通更容易"
----
+--- layout: page description: "Hey, here I am, welcome!" ---
 
 <!-- 快速链接。可修改链接和名字，或整体删除 -->
 <ul class="pager">
-       <li class="next">
+    <li class="next">
         <a href="https://globien.github.io/" data-toggle="tooltip" data-placement="top" title="English Version">
                         English<br>
         </a>
-    </li>        
+    </li>
     <li class="next">
         <a href="https://globien.gitee.io/2018/12/10/briefing/" data-toggle="tooltip" data-placement="top" title="格罗比言简介">
                         了解更多<br>
@@ -19,7 +16,7 @@ description: "中西融合，即学即会，让世界沟通更容易"
         <a href="https://globien.gitee.io/1-resources/" data-toggle="tooltip" data-placement="top" title="学习资料集">
                         开始学习<br>
         </a>
-    </li>                         
+    </li>
 </ul>
 
 
@@ -42,8 +39,7 @@ description: "中西融合，即学即会，让世界沟通更容易"
         Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
     </p>
 </div>
-<hr>
-{% endfor %}
+<hr> {% endfor %}
 
 <!-- Pager -->
 {% if paginator.total_pages > 1 %}
@@ -52,8 +48,7 @@ description: "中西融合，即学即会，让世界沟通更容易"
     <li class="previous">
         <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
     </li>
-    {% endif %}
-    {% if paginator.next_page %}
+    {% endif %} {% if paginator.next_page %}
     <li class="next">
         <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
     </li>
@@ -63,6 +58,6 @@ description: "中西融合，即学即会，让世界沟通更容易"
 
 <!-- 回传giteement评论页网址 -->
 <script src="https://giteement.oss-cn-beijing.aliyuncs.com/oauthcallback.browser.js"></script>
-  <script>
+<script>
     Oauthcallback();
-  </script>
+</script>

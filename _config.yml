@@ -1,6 +1,6 @@
 # Site settings
 title: 苔痕上阶绿
-SEOTitle: 苔痕上阶绿 - 申耀军
+SEOTitle: 复照青苔上
 header-img: img/home-bg-bluestars.jpg
 email: shenyaojun@hotmail.com
 description: "苔痕上阶绿，草色入帘青。谈笑有鸿儒，往来无白丁。可以调素琴，阅金经。无丝竹之乱耳，无案牍之劳形"
@@ -76,7 +76,7 @@ giteement:
   enable: true  # 是否启用码云评论系统
   # 是否使用官方js(false可以提升访问速度)
   remote: false
-  redirect_uri: 'https://globien.gitee.io'   # 应用回调地址(请和配置的第三方应用保持一致)
+  redirect_uri: 'https://shenyaojun.github.io/'   # 应用回调地址(请和配置的第三方应用保持一致)
   # 不能更改(网上开源项目https://github.com/Rob--W/cors-anywhere作者提供的专门用来跨域服务器的配置)
   oauth_uri: https://cors-anywhere.herokuapp.com/https://gitee.com/oauth/token
   giteeID: 'globien'  # 你的码云账号英文名
