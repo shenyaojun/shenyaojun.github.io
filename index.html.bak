@@ -1,7 +1,4 @@
---- 
-layout: page 
-description: "Hey, here I am, welcome!" 
----
+--- layout: page description: "Hey, here I am, welcome!" ---
 
 <!-- 快速链接。可修改链接和名字，或整体删除 -->
 <ul class="pager">
