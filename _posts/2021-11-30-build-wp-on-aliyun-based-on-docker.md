@@ -34,8 +34,8 @@ tags:
   120  docker images
 ```
 
-#  123  docker import --message "OLDMysql" mysql.tar mysql:5.7
-#  124  docker import --message "OLDwp" wp.tar wordpress 
+`  123  docker import --message "OLDMysql" mysql.tar mysql:5.7`
+`  124  docker import --message "OLDwp" wp.tar wordpress `
 
 ```
   125  docker images
@@ -53,8 +53,8 @@ tags:
   169  docker exec -it 68a8e7aa6a7e   /bin/sh
   170  docker ps
 ```
-#  192  docker run -d --privileged=true --name OLDMysql -e MYSQL_ROOT_PASSWORD=123456 -p 33306:3306 -v /root/mysql:/var/lib/mysql mysql:5.7 docker-entrypoint.sh mysqld
-#  206  docker run -d --name OLDwp -e WORDPRESS_DB_HOST=mysql -e WORDPRESS_DB_USER=root -e WORDPRESS_DB_PASSWORD=123456 -e WORDPRESS_DB_NAME=myword -p 8080:80  -v /root/wp/html:/var/www/html --link OLDMysql:mysql wordpress docker-entrypoint.sh apache2-foreground
+`  192  docker run -d --privileged=true --name OLDMysql -e MYSQL_ROOT_PASSWORD=123456 -p 33306:3306 -v /root/mysql:/var/lib/mysql mysql:5.7 docker-entrypoint.sh mysqld`
+`  206  docker run -d --name OLDwp -e WORDPRESS_DB_HOST=mysql -e WORDPRESS_DB_USER=root -e WORDPRESS_DB_PASSWORD=123456 -e WORDPRESS_DB_NAME=myword -p 8080:80  -v /root/wp/html:/var/www/html --link OLDMysql:mysql wordpress docker-entrypoint.sh apache2-foreground`
 
 ```
   207  docker ps
@@ -71,14 +71,14 @@ tags:
   255  docker ps -a
   257  history
 ```
-#  docker run -d --name OLDwp -e WORDPRESS_DB_HOST=mysql -e WORDPRESS_DB_USER=root -e WORDPRESS_DB_PASSWORD=123456 -e WORDPRESS_DB_NAME=myword -p 8080:80  -v /root/wp/html:/var/www/html --link OLDMysql:mysql wordpress docker-entrypoint.sh apache2-foreground
+`  docker run -d --name OLDwp -e WORDPRESS_DB_HOST=mysql -e WORDPRESS_DB_USER=root -e WORDPRESS_DB_PASSWORD=123456 -e WORDPRESS_DB_NAME=myword -p 8080:80  -v /root/wp/html:/var/www/html --link OLDMysql:mysql wordpress docker-entrypoint.sh apache2-foreground`
 
 
-# 376  docker run -d --name RUIwp -e WORDPRESS_DB_HOST=mysql -e WORDPRESS_DB_USER=root -e WORDPRESS_DB_PASSWORD=123456 -e WORDPRESS_DB_NAME=myword2 -p 8082:80  -v /root/wp/html2:/var/www/html --link OLDMysql:mysql wordpress docker-entrypoint.sh apache2-foreground
+` 376  docker run -d --name RUIwp -e WORDPRESS_DB_HOST=mysql -e WORDPRESS_DB_USER=root -e WORDPRESS_DB_PASSWORD=123456 -e WORDPRESS_DB_NAME=myword2 -p 8082:80  -v /root/wp/html2:/var/www/html --link OLDMysql:mysql wordpress docker-entrypoint.sh apache2-foreground`
 
 ```
   378  docker exec -it bfcc98706f8c /bin/sh
   379  docker ps
 ```
-#  380  docker run -d --name LIUwp -e WORDPRESS_DB_HOST=mysql -e WORDPRESS_DB_USER=root -e WORDPRESS_DB_PASSWORD=123456 -e WORDPRESS_DB_NAME=myword3 -p 8083:80  -v /root/wp/html3:/var/www/html --link OLDMysql:mysql wordpress docker-entrypoint.sh apache2-foreground
+`  380  docker run -d --name LIUwp -e WORDPRESS_DB_HOST=mysql -e WORDPRESS_DB_USER=root -e WORDPRESS_DB_PASSWORD=123456 -e WORDPRESS_DB_NAME=myword3 -p 8083:80  -v /root/wp/html3:/var/www/html --link OLDMysql:mysql wordpress docker-entrypoint.sh apache2-foreground`
 
