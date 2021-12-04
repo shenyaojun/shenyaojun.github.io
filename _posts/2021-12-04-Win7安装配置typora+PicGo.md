@@ -4,7 +4,7 @@ title:      Win7安装配置typora+PicGo
 subtitle:   问题不少
 date:       2021-12-04
 author:     就是我啦
-header-img: img/post-bg-mma-1.jpg
+header-img: img/tag-bg-o.jpg
 catalog: 	  true
 tags:
     - WordPress    
