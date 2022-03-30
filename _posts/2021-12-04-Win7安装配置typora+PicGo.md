@@ -21,7 +21,7 @@ tags:
 
 ### 1. Win7安装typora后启动就只是白屏
 
-![image-20211204211435184](https://gitee.com/shenyao/sohossl/raw/master/images/image-20211204211435184.png)
+![image-20211204211435184](/img/images/image-20211204211435184.png)
 
 
 
