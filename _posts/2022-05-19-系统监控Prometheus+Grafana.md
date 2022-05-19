@@ -104,7 +104,7 @@ Prometheus的基本原理是**通过HTTP协议**周期性抓取被监控组件�
 
 ## 架构涉及
 
-![img](https://upload-images.jianshu.io/upload_images/26511039-2c7e2d801b84d75b.png?imageMogr2/auto-orient/strip|imageView2/2/format/webp)
+![img](/img/images/2178672-0f8e643345fa1da8674.png)
 
 
 
