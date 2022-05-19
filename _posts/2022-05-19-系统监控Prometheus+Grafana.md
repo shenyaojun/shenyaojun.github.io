@@ -5,7 +5,7 @@ title:      系统监控Prometheus+Grafana
 subtitle:   系统监控新套件
 date:       2022-05-19
 author:     就是我啦
-header-img: img/post-bg-debug.png
+header-img: img/post-bg-os-metro.jpg
 catalog: 	  true
 tags:
     - 系统监控    
