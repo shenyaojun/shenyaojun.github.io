@@ -61,6 +61,8 @@ ClickHouse 是由俄罗斯的第一大搜索引擎 **Yandex** 公司开源的**�
 
 [https://www.bilibili.com/video/BV1Yh411z7os](https://www.bilibili.com/video/BV1Yh411z7os)
 
+[https://www.bilibili.com/video/BV1Gg411g7Cv](https://www.bilibili.com/video/BV1Gg411g7Cv)
+
 重点是理解MergeTree
 
 ### 插曲
