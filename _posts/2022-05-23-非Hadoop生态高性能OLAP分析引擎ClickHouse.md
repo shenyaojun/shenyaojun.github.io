@@ -81,6 +81,10 @@ https://clickhouse.com/#quick-start
 
 好像不多，kylin、Doris、[StarRocks](https://blog.csdn.net/qq_20949471/article/details/124741703?utm_medium=distribute.pc_aggpage_search_result.none-task-blog-2~aggregatepage~first_rank_ecpm_v1~rank_v31_ecpm-4-124741703-null-null.pc_agg_new_rank&utm_term=doris%E5%BC%80%E6%BA%90%E4%BA%8B%E4%BB%B6+starrocks&spm=1000.2123.3001.4430)等，还有真假开源之争，真乱。相比而言，ClickHouse还纯粹些。
 
+大数据还对Update/delete支持比较好的，是数据湖产品：
+
+![image-20220524160904680](/img/images/image-20220524160904680.png)
+
 ### Dashboard展示
 
 ClickHouse主要是数据的存储和分析计算，而展示就需要一些Dashboard工具，比如Grafana等
