@@ -114,7 +114,7 @@ plt.show()
 
 能明显看出CPU和GPU的性能区别：
 
-![image-20230303145651062](/Users/shenyaojun/work/shenyaojun.github.io/img/images/image-20230303145651062.png)
+![image-20230303145651062](\img\images\image-20230303145651062.png)
 
 蓝线是CPU耗时，红线是GPU。很明显，大数据量下GPU性能高的多。
 
