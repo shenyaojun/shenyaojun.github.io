@@ -20,7 +20,8 @@ tags:
 > 今天偶然刷到PythonGUI的介绍视频，觉得挺好，记下来
 
 ```sh
-Python的自动化测试包有很多，除了pyautogui还有pywinauto、win32gui等。相对pyautogui用的更多一些，直接通过屏幕定位来操作鼠标和键盘，不用抓取窗口句柄等结构，简单粗暴方便
+Python的自动化测试包有很多，除了pyautogui还有pywinauto、win32gui等。
+相对pyautogui用的更多一些，直接通过屏幕定位来操作鼠标和键盘，不用抓取窗口句柄等结构，简单粗暴方便
 ```
 
 ## 缘起
@@ -38,6 +39,7 @@ pyautogui是用来做GUI桌面应用自动化的Python包，功能类似于按�
 
 ```python
 # -*- coding: utf-8 -*-
+
 """
 Created on Tue Apr 13 15:09:40 2021
 
@@ -49,10 +51,12 @@ import pyautogui
 import time
 
 # 回到桌面
+
 pyautogui.hotkey('win','d')
 time.sleep(0.5)
 
 # 打开数据库
+
 coords = pyautogui.locateOnScreen(r'C:\Users\yunyi.wang\Desktop\file\Kingstar_files\自动化报表RPA需求\PLSQL.png')
 pyautogui.click(pyautogui.center(coords), clicks=2)
 
@@ -99,16 +103,21 @@ pyautogui.press('F8')
 
 ```python
 #coding=utf-8
+
 from selenium import webdriver
 import time
 #打开火狐浏览器
+
 driver=webdriver.Firefox()
 #打开百度
+
 driver.get("https://www.baidu.com")
 time.sleep(2)
 #找到输入框输入 只宅不技术
+
 driver.find_element_by_id("kw").send_keys(u'只宅不技术')
 #点击搜索框
+
 driver.find_element_by_id("su").click()
 
 ```
@@ -136,31 +145,39 @@ import pyautogui
 import time
 
 #定义图像识别双击事件
+
 def mouseDoubleClick(image):
     x,y=pyautogui.locateCenterOnScreen(image)
     pyautogui.click(x,y,clicks=2,interval=0.2,duration=0.2,button='left')
 
 #定义单击事件
+
 def mouseClick(image):
     x,y=pyautogui.locateCenterOnScreen(image)
     pyautogui.click(x,y,clicks=1,interval=0.2,duration=0.2,button='left')
 
 #双击火狐浏览器的图标
+
 mouseDoubleClick(image='firefox.png')
 time.sleep(3)
 #双击浏览器的url地址框
+
 mouseClick(image='url.png')
 #在地址框输入百度地址，然后回车
+
 pyautogui.typewrite('www.baidu.com')
 pyautogui.keyDown('enter')
 pyautogui.keyUp('enter')
 time.sleep(2)
 #双击搜索框
+
 mouseClick(image='kw.png')
 #将只宅不技术粘贴到搜索框
+
 pyautogui.hotkey('ctrl','v')
 time.sleep(2)
 #点击搜索
+
 mouseClick(image='su.png')
 
 ```
