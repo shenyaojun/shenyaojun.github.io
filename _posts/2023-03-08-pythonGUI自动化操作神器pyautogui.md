@@ -136,7 +136,7 @@ driver.find_element_by_id("su").click()
 
 由于typewrite()函数无法输入中文，所以事先把“只宅不技术”复制到了粘贴板，输入时候粘贴一下就行，将截图与代码放置在同一路径下【需要注意，整个屏幕上只能有一个火狐的图标，不然会报错】
 
-![img](https://img-blog.csdnimg.cn/37cb3226cd8147428e35105d4700b491.png)
+![img](\img\images\37cb3226cd8147428e35105d4700b491.png)
 
 代码如下：
 
