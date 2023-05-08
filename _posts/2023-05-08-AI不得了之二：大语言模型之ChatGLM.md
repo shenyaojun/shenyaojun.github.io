@@ -101,31 +101,57 @@ Wenda采用**知识库+auto脚本**的形式为LLM提供**生成能力**，充�
 ```python
 Sure, here's a sample program in Python to download a short video from Bilibili:
 
+
 import requests
+
 from bs4 import BeautifulSoup
 
+
 # Set the URL of the video to be downloaded
+
 url = "https://www.bilibili.com/video/ID_123456"
 
+
 # 发送 GET 请求以获取视频内容
+
 response = requests.get(url)
 
+
 # 解析 HTML 页面
+
 soup = BeautifulSoup(response.text, "html.parser")
 
+
 # 获取视频标题和时长
+
 title = soup.find("title").get_text()
+
 duration = soup.find("video/info").find("meta").get_text()
 
+
 # 下载视频
+
 with open("download.mp4", "wb") as f:
+    
     for link in title, duration:
+        
         f.write(link)
-This program first sets the URL of the video to be downloaded, and then uses the requests library to send a GET request to the Bilibili website. The response from the request is then解析d using BeautifulSoup, and the video title and length are extracted. Finally, the video is下载 using the with open() statement.
+        
+This program first sets the URL of the video to be downloaded, and then uses the requests
+library to send a GET request to the Bilibili website. The response from the request is 
+then解析d using BeautifulSoup, and the video title and length are extracted. Finally, the
+video is下载 using the with open() statement.
 
-You can replace the id_123456 with the actual video ID of the short video you want to download and the https://www.bilibili.com/video/ID_XXXX with the URL of the video you want to download.
 
-Note that this is just a simple example, and it may not work as-is on all Bilibili websites. Additionally, the Bilibili website may have different privacy policies and terms of use, so you may need to comply with them to download the video.
+You can replace the id_123456 with the actual video ID of the short video you want to 
+download and the https://www.bilibili.com/video/ID_XXXX with the URL of the video you 
+    want to download.
+    
+
+Note that this is just a simple example, and it may not work as-is on all Bilibili 
+websites. Additionally, the Bilibili website may have different privacy policies and
+terms of use, so you may need to comply with them to download the video.
+
 
 
 ```
