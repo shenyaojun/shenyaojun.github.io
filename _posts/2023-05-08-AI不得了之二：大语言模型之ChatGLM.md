@@ -175,6 +175,48 @@ ChatRWKV是一个国人做的开源项目，是对标ChatGPT的，基于RWKV (10
 
 在我的1660Ti 6G显卡下就能玩，让它写了两千字的小说，结果，开个头就跑题了：）
 
+
+
+### 其他
+
+#### 1. text2video
+
+基于多阶段文本到视频生成扩散模型, 输入描述文本，返回符合文本描述的视频，出自阿里达摩院。
+
+文本到视频生成扩散模型由文本特征提取、文本特征到视频隐空间扩散模型、视频隐空间到视频视觉空间这3个子网络组成，整体模型参数约17亿。支持英文输入。扩散模型采用Unet3D结构，通过从纯高斯噪声视频中，迭代去噪的过程，实现视频生成的功能。
+
+https://huggingface.co/damo-vilab/text-to-video-ms-1.7b
+
+试用了一下，能玩，但是，离Stable Diffusion真正实用的水平还比较远。
+
+#### 2. Claude
+
+Claude 由OpenAI前副总裁离职创立，和ChatGPT同宗。
+
+现在国内已经不能用了，可用地区里没有中国。
+
+#### 3. text2audio bark
+
+开源地址：[GitHub - suno-ai/bark: Text-Prompted Generative Audio Model](https://link.zhihu.com/?target=https%3A//github.com/suno-ai/bark)
+
+Bark是一个由 Suno 创建的基于变压器的文本-音频模型。Bark可以生成高度逼真的多语言语音以及其他音频--包括音乐、背景噪音和简单的声音效果。该模型还可以产生非语言交流，如笑、叹气和哭泣。为了支持研究界，我们正在提供访问预训练的模型检查点，准备进行推理。
+
+简单来说，这就是一个 AI 文字生成语文模型，最大的亮点就是可以生成各种音效，这是传统文字转语音工具做不到的。
+
+试听效果：[Notion – The all-in-one workspace for your notes, tasks, wikis, and databases.](https://link.zhihu.com/?target=https%3A//suno-ai.notion.site/Bark-Examples-5edae8b02a604b54a42244ba45ebc2e2)
+
+官方提供的 huggingface 体验地址：[Bark - a Hugging Face Space by suno](https://link.zhihu.com/?target=https%3A//huggingface.co/spaces/suno/bark)
+
+就是速度太慢了！
+
+试用后好像对中文支持不太好，一股外国人说中文的味道。
+
+
+
+最后，感谢**百度飞桨**，免费学习平台，真的不错！
+
+
+
 ### 总结
 
 1. 以ChatGPT的出现为标志，人类彻底进入了智能时代
