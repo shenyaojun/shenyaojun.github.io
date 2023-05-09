@@ -177,6 +177,20 @@ ChatRWKV是一个国人做的开源项目，是对标ChatGPT的，基于RWKV (10
 
 
 
+### UC大语言模型排名
+
+[UC伯克利](https://www.chinaz.com/tags/812228.shtml)发起了[大语言模型](https://www.chinaz.com/tags/793361.shtml)版[排位赛](https://www.chinaz.com/tags/paiweisai.shtml)，让大语言模型随机进行battle，并根据它们的Elo得分进行排名。
+
+排行榜数据显示，[Vicuna](https://www.chinaz.com/tags/812229.shtml)以1169分排名第一，Koala位列第二。这两个模型都有130亿参数。LAION的Open Assistant排在第三。
+
+清华提出的ChatGLM，虽然只有60亿参数，但依然冲进了前五，只比130亿参数的Alpaca落后了23分。
+
+![QQ截图20230505104532.jpg](\img\images\6381888065823382606233687.jpg)
+
+从这个排名看，ChatGLM也确实是不俗的。
+
+
+
 ### 其他
 
 #### 1. text2video
