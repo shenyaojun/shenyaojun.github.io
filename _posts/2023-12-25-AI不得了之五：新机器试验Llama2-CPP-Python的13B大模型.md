@@ -45,7 +45,7 @@ LLamaSharp.Backend.MacMetal  # special for using mac metal
 
 就是如果想利用GPU的话，就不能安装LLamaSharp.Backend.Cpu。有这个包，就会自动直接调CPU，不利用CUDA。删除这个包后，才会自动利用CUDA。
 
-例外，就是新版（0.8.X）的LLamaSharp.Backend.Cuda11明显比老版本0.7.X快了。我跑的llama2 13B的q4量化版本，在这台矿渣+老机器上居然还跑的挺快。
+另外，就是新版（0.8.X）的LLamaSharp.Backend.Cuda11明显比老版本0.7.X快了。我跑的llama2 13B的q4量化版本，在这台矿渣+老机器上居然还跑的挺快。
 
 ```c#
           var parameters = new ModelParams(modelPath)
